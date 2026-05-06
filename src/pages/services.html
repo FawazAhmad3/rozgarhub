@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RozgarHub - Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <style>
+    .services-page { padding: 4rem 0; }
+    .category-block { margin-bottom: 4rem; }
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-item {
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .service-item:hover {
+      background: var(--primary-color);
+      color: var(--white);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header id="navbar-placeholder"></header>
+  
+  <main class="container services-page">
+    <h1 id="page-title" class="section-title">Our Services</h1>
+    <div id="services-container"></div>
+  </main>
+
+  <footer id="footer-placeholder"></footer>
+
+  <script src="../js/core.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await core.initNavbar();
+      await core.initFooter();
+      const data = await core.fetchData('../../src/data/services.json');
+      if (!data) return;
+
+      document.getElementById('page-title').innerText = data.pageTitle;
+      const container = document.getElementById('services-container');
+      
+      data.categories.forEach(cat => {
+        const block = document.createElement('div');
+        block.className = 'category-block';
+        block.innerHTML = `
+          <h2 class="mb-4">${cat.name}</h2>
+          <div class="items-grid">
+            ${cat.items.map(item => `
+              <div class="glass-card service-item">
+                <span>${item}</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(block);
+      });
+    });
+  </script>
+</body>
+</html>

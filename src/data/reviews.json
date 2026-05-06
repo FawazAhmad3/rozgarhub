@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Customer Reviews - RozgarHub",
+  "reviews": [
+    {
+      "name": "Ahmed Ali",
+      "rating": 5,
+      "comment": "Excellent plumbing service! Very professional and on time.",
+      "date": "2024-05-01"
+    },
+    {
+      "name": "Sara Khan",
+      "rating": 4,
+      "comment": "The deep cleaning was thorough. Highly recommended.",
+      "date": "2024-04-28"
+    },
+    {
+      "name": "Zahid Sheikh",
+      "rating": 5,
+      "comment": "Furniture assembly was quick and perfect. Great job!",
+      "date": "2024-04-15"
+    }
+  ]
+}

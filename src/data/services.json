@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Our Services - RozgarHub",
+  "categories": [
+    {
+      "name": "Cleaning",
+      "items": [
+        "Home Cleaning",
+        "Move Out Cleaning",
+        "Office Cleaning",
+        "Deep Cleaning"
+      ]
+    },
+    {
+      "name": "Installation",
+      "items": [
+        "TV Mounting",
+        "Picture or Shelf Hanging",
+        "Light Fixtures",
+        "Ceiling Fans"
+      ]
+    },
+    {
+      "name": "Handyman",
+      "items": [
+        "Furniture Assembly",
+        "General Handyman"
+      ]
+    },
+    {
+      "name": "General Plumbing",
+      "items": [
+        "Faucets",
+        "Toilets"
+      ]
+    },
+    {
+      "name": "General Electric",
+      "items": [
+        "Outlets and Switches"
+      ]
+    },
+    {
+      "name": "Moving Help",
+      "items": []
+    },
+    {
+      "name": "Outdoor Projects",
+      "items": [
+        "Lawn Care",
+        "Gutters and Downspouts",
+        "Tree Removal",
+        "Tree Trimming",
+        "Wood Fence Installation"
+      ]
+    }
+  ]
+}

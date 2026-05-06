@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RozgarHub - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+  <header id="navbar-placeholder"></header>
+
+  <main>
+    <!-- Hero Slider -->
+    <section id="hero-slider" class="hero-section">
+      <div class="slider-container" id="slider-content">
+        <!-- Slides injected by JS -->
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-grid">
+          <div class="booking-content">
+            <h2 id="booking-title" class="section-title">Book your service</h2>
+            <form id="booking-form" class="glass-card booking-form">
+              <div class="form-group">
+                <label id="label-name">Name</label>
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label id="label-phone">03XXXXXXXXX</label>
+                <input type="tel" placeholder="03001234567" pattern="03[0-9]{9}" required>
+              </div>
+              <div class="form-group">
+                <label id="label-service">Select Service</label>
+                <select id="service-select">
+                  <option value="">select</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Islamabad</label>
+                <select disabled>
+                  <option>Islamabad</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label id="label-area">Area</label>
+                <select id="area-select">
+                  <option value="">select</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label id="label-address">Address</label>
+                <textarea placeholder="Detailed Address" required></textarea>
+              </div>
+              <button type="submit" id="btn-request" class="btn btn-primary full-width">Request a call</button>
+            </form>
+          </div>
+          <div class="booking-image">
+            <img src="../../public/images/booking-side.jpg" alt="Booking" class="rounded-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Services -->
+    <section class="top-services">
+      <div class="container">
+        <h2 id="top-services-title" class="section-title">Our Top services</h2>
+        <div class="services-grid" id="top-services-list">
+          <!-- Top services injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Selection -->
+    <section class="location-section">
+      <div class="container text-center">
+        <h2 id="location-title" class="section-title">Select location</h2>
+        <p id="location-desc" class="location-info">Right now we only work in Islamabad</p>
+        <div class="location-badge">
+          <i class="fas fa-map-marker-alt"></i> Islamabad
+        </div>
+      </div>
+    </section>
+
+    <!-- Affiliation Section -->
+    <section class="affiliation-section">
+      <div class="container">
+        <h2 id="affiliation-title" class="section-title">Our Affiliation</h2>
+        <div class="logos-grid" id="affiliation-logos">
+          <!-- Logos injected by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer-placeholder"></footer>
+
+  <script src="../js/core.js"></script>
+  <script src="../js/home.js"></script>
+</body>
+</html>
