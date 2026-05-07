@@ -25,7 +25,6 @@ const Home: React.FC = () => {
                 </div>
                 <div className="card-body">
                   <h3>{service.name}</h3>
-                  <button className="btn-text">Learn More →</button>
                 </div>
               </div>
             ))}
