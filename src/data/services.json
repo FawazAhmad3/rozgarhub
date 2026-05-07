@@ -1,5 +1,8 @@
 {
-  "pageTitle": "Our Services - RozgarHub",
+  "header": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for every corner of your home."
+  },
   "categories": [
     {
       "name": "Cleaning",
@@ -27,21 +30,26 @@
       ]
     },
     {
-      "name": "General Plumbing",
+      "name": "Plumbing",
       "items": [
+        "General Plumbing",
         "Faucets",
         "Toilets"
       ]
     },
     {
-      "name": "General Electric",
+      "name": "Electric",
       "items": [
+        "General Electric",
         "Outlets and Switches"
       ]
     },
     {
       "name": "Moving Help",
-      "items": []
+      "items": [
+        "Packing and Unpacking",
+        "Loading and Unloading"
+      ]
     },
     {
       "name": "Outdoor Projects",

@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           <h2 className="banner-title">{data.locationSection.title}</h2>
           <p className="banner-desc">{data.locationSection.description}</p>
           <div className="location-badge">
-            <span className="dot"></span> Currently in Islamabad
+            <span className="dot"></span> {data.locationSection.badge}
           </div>
         </div>
       </section>

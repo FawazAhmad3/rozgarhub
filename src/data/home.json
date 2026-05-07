@@ -12,10 +12,12 @@
         "title": "Expert Repairs & Cleaning",
         "subtitle": "Quality service you can rely on"
       }
-    ]
+    ],
+    "cta": "Explore Services"
   },
   "bookingForm": {
     "title": "Book your service",
+    "description": "Expert help for your home is just a few clicks away. Reliable professionals at your doorstep.",
     "fields": {
       "name": "Name",
       "phone": "03XXXXXXXXX",
@@ -24,6 +26,11 @@
       "area": "Area",
       "address": "Address",
       "button": "Request a call"
+    },
+    "placeholders": {
+      "name": "Your Name",
+      "phone": "03XXXXXXXXX",
+      "address": "Your Detailed Address"
     },
     "services": [
       "Home Appliance Repair",
@@ -63,7 +70,8 @@
   },
   "locationSection": {
     "title": "Select location",
-    "description": "Right now we only work in Islamabad"
+    "description": "Right now we only work in Islamabad",
+    "badge": "Currently in Islamabad"
   },
   "affiliations": {
     "title": "Our Affiliation",

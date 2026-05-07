@@ -1,8 +1,24 @@
 {
-  "pageTitle": "Become a Tasker - RozgarHub",
   "header": {
-    "title": "Join Our Team of Professionals",
-    "subtitle": "Earn money by providing your skills to customers in Islamabad."
+    "title": "Become a Tasker",
+    "subtitle": "Join our network of skilled professionals and start earning today."
+  },
+  "whyJoin": {
+    "title": "Why join RozgarHub?",
+    "benefits": [
+      {
+        "title": "Be your own boss",
+        "description": "Work when you want, where you want. You have full control over your schedule."
+      },
+      {
+        "title": "Set your own rates",
+        "description": "You decide how much your time and skills are worth. Get paid what you deserve."
+      },
+      {
+        "title": "Grow your business",
+        "description": "We connect you with thousands of customers in Islamabad looking for your expertise."
+      }
+    ]
   },
   "contact": {
     "title": "Contact Us to Join",

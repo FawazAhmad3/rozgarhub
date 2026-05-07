@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import type { Slide } from '../types';
+import homeData from '../data/home.json';
 import '../styles/HeroSlider.css';
+
+interface Slide {
+  image: string;
+  title: string;
+  subtitle: string;
+}
 
 interface HeroSliderProps {
   slides: Slide[];
@@ -12,7 +18,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -24,10 +30,10 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
           className={`slide ${index === current ? 'active' : ''}`}
           style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${slide.image})` }}
         >
-          <div className="container slide-content">
-            <h1 className="slide-title">{slide.title}</h1>
-            <p className="slide-subtitle">{slide.subtitle}</p>
-            <button className="btn btn-primary btn-lg">Explore Services</button>
+          <div className="container hero-content">
+            <h1 className="hero-title">{slide.title}</h1>
+            <p className="hero-subtitle">{slide.subtitle}</p>
+            <button className="btn btn-primary btn-lg">{homeData.hero.cta}</button>
           </div>
         </div>
       ))}

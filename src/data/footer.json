@@ -1,0 +1,18 @@
+{
+  "description": "Providing premium home services in Islamabad. Trusted, reliable, and professional care for your home.",
+  "quickLinks": {
+    "title": "Quick Links",
+    "links": [
+      { "name": "Home", "path": "/" },
+      { "name": "Services", "path": "/services" },
+      { "name": "Reviews", "path": "/reviews" },
+      { "name": "Become a Tasker", "path": "/become-a-tasker" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": "Islamabad, Pakistan",
+    "email": "info@rozgarhub.com"
+  },
+  "copyright": "RozgarHub. All rights reserved."
+}

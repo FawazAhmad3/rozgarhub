@@ -1,35 +1,31 @@
 import React from 'react';
 import reviewsData from '../data/reviews.json';
-import { Star } from 'lucide-react';
 import '../styles/Reviews.css';
 
 const Reviews: React.FC = () => {
   return (
     <div className="reviews-page">
-      <section className="reviews-hero">
+      <header className="reviews-header">
         <div className="container">
-          <h1 className="section-title">{reviewsData.pageTitle}</h1>
-          <p className="hero-subtitle">What our customers in Islamabad have to say about us.</p>
+          <h1 className="section-title">{reviewsData.header.title}</h1>
+          <p className="section-subtitle">{reviewsData.header.subtitle}</p>
         </div>
-      </section>
+      </header>
 
       <div className="container">
         <div className="reviews-grid">
-          {reviewsData.reviews.map((rev, idx) => (
-            <div key={idx} className="glass-card review-card">
-              <div className="reviewer-info">
-                <div className="reviewer-avatar">{rev.name.charAt(0)}</div>
-                <div>
-                  <h3 className="reviewer-name">{rev.name}</h3>
-                  <div className="rating">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} fill={i < rev.rating ? "#f59e0b" : "none"} stroke={i < rev.rating ? "#f59e0b" : "#cbd5e1"} />
-                    ))}
-                  </div>
+          {reviewsData.items.map((review) => (
+            <div key={review.id} className="review-card glass-card">
+              <div className="review-header">
+                <div className="stars">
+                  {'★'.repeat(review.rating)}{'☆'.repeat(5 - review.rating)}
                 </div>
+                <span className="service-tag">{review.service}</span>
               </div>
-              <p className="comment">"{rev.comment}"</p>
-              <span className="review-date">{rev.date}</span>
+              <p className="comment">"{review.comment}"</p>
+              <div className="author">
+                <span className="name">{review.name}</span>
+              </div>
             </div>
           ))}
         </div>

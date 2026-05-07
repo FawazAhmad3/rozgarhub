@@ -1,23 +1,36 @@
 {
-  "pageTitle": "Customer Reviews - RozgarHub",
-  "reviews": [
+  "header": {
+    "title": "Customer Reviews",
+    "subtitle": "What our customers in Islamabad have to say about us."
+  },
+  "items": [
     {
-      "name": "Ahmed Ali",
+      "id": 1,
+      "name": "Ahmed Khan",
       "rating": 5,
-      "comment": "Excellent plumbing service! Very professional and on time.",
-      "date": "2024-05-01"
+      "comment": "Excellent cleaning service. They were on time and very professional. Highly recommended for home cleaning in Islamabad.",
+      "service": "Home Cleaning"
     },
     {
-      "name": "Sara Khan",
+      "id": 2,
+      "name": "Sarah Malik",
       "rating": 4,
-      "comment": "The deep cleaning was thorough. Highly recommended.",
-      "date": "2024-04-28"
+      "comment": "Had my TV mounted. The tasker did a great job, though he was slightly late. Quality of work is top-notch.",
+      "service": "TV Mounting"
     },
     {
-      "name": "Zahid Sheikh",
+      "id": 3,
+      "name": "Zubair Ahmed",
       "rating": 5,
-      "comment": "Furniture assembly was quick and perfect. Great job!",
-      "date": "2024-04-15"
+      "comment": "RozgarHub is my go-to for all plumbing needs. Quick response and expert fixing. Very reliable.",
+      "service": "General Plumbing"
+    },
+    {
+      "id": 4,
+      "name": "Ayesha Siddiqui",
+      "rating": 5,
+      "comment": "Amazing experience with their electrician. Fixed our wiring issues safely and efficiently. Great value for money.",
+      "service": "General Electric"
     }
   ]
 }

@@ -5,9 +5,9 @@
 
 .booking-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 8rem;
-  align-items: flex-start;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: center;
 }
 
 .text-left {
@@ -47,8 +47,8 @@
   letter-spacing: 0.5px;
 }
 
-.form-group input, 
-.form-group select, 
+.form-group input,
+.form-group select,
 .form-group textarea {
   padding: 0.85rem 1rem;
   border: 1px solid #e2e8f0;
@@ -59,8 +59,8 @@
   background-color: #f8fafc;
 }
 
-.form-group input:focus, 
-.form-group select:focus, 
+.form-group input:focus,
+.form-group select:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary);

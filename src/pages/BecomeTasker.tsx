@@ -1,68 +1,52 @@
 import React from 'react';
-import taskerData from '../data/become-a-tasker.json';
-import { Phone, Mail, CheckCircle } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
+import becomeTaskerData from '../data/become-a-tasker.json';
 import '../styles/BecomeTasker.css';
 
 const BecomeTasker: React.FC = () => {
+  const { header, whyJoin, contact } = becomeTaskerData;
+
   return (
-    <div className="tasker-page">
-      <section className="tasker-hero">
+    <div className="become-tasker-page">
+      <header className="page-header">
         <div className="container">
-          <h1 className="section-title">{taskerData.header.title}</h1>
-          <p className="hero-subtitle">{taskerData.header.subtitle}</p>
+          <h1 className="section-title">{header.title}</h1>
+          <p className="section-subtitle">{header.subtitle}</p>
+        </div>
+      </header>
+
+      <section className="benefits-section">
+        <div className="container">
+          <h2 className="section-title">{whyJoin.title}</h2>
+          <div className="benefits-grid">
+            {whyJoin.benefits.map((benefit, idx) => (
+              <div key={idx} className="benefit-card glass-card">
+                <h3>{benefit.title}</h3>
+                <p>{benefit.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <div className="container">
-        <div className="tasker-grid">
-          <div className="benefits-section">
-            <h2>Why join RozgarHub?</h2>
-            <div className="benefit-item">
-              <CheckCircle className="icon" />
-              <div>
-                <h3>Flexible Hours</h3>
-                <p>Work whenever you want. You are your own boss.</p>
-              </div>
-            </div>
-            <div className="benefit-item">
-              <CheckCircle className="icon" />
-              <div>
-                <h3>High Earnings</h3>
-                <p>Earn more than industry standards with our platform.</p>
-              </div>
-            </div>
-            <div className="benefit-item">
-              <CheckCircle className="icon" />
-              <div>
-                <h3>Quick Payments</h3>
-                <p>Get paid directly and quickly after every task.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="glass-card contact-card">
-            <h2>{taskerData.contact.title}</h2>
-            <p>{taskerData.contact.description}</p>
+      <section className="contact-cta">
+        <div className="container">
+          <div className="glass-card cta-box">
+            <h2>{contact.title}</h2>
+            <p>{contact.description}</p>
             <div className="contact-methods">
-              <div className="contact-method">
-                <Phone className="icon" />
-                <div>
-                  <span>Call or WhatsApp</span>
-                  <strong>{taskerData.contact.phone}</strong>
-                </div>
-              </div>
-              <div className="contact-method">
-                <Mail className="icon" />
-                <div>
-                  <span>Email Us</span>
-                  <strong>{taskerData.contact.email}</strong>
-                </div>
-              </div>
+              <a href={`tel:${contact.phone}`} className="contact-btn">
+                <Phone size={24} />
+                <span>{contact.phone}</span>
+              </a>
+              <a href={`mailto:${contact.email}`} className="contact-btn">
+                <Mail size={24} />
+                <span>{contact.email}</span>
+              </a>
             </div>
-            <button className="btn btn-primary full-width mt-8">Apply Now</button>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

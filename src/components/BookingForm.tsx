@@ -41,7 +41,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
         <div className="booking-grid">
           <div className="booking-info">
             <h2 className="section-title text-left">{data.title}</h2>
-            <p className="booking-subtitle">Expert help for your home is just a few clicks away. Reliable professionals at your doorstep.</p>
+            <p className="booking-subtitle">{data.description}</p>
           </div>
           
           <form className="glass-card booking-form shadow-2xl" onSubmit={handleSubmit}>
@@ -50,7 +50,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
               <input 
                 type="text" 
                 name="name"
-                placeholder="Your Name" 
+                placeholder={data.placeholders.name}
                 value={formData.name}
                 onChange={handleChange}
                 required 
@@ -61,7 +61,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
               <input 
                 type="tel" 
                 name="phone"
-                placeholder="03XXXXXXXXX" 
+                placeholder={data.placeholders.phone}
                 value={formData.phone}
                 onChange={handleChange}
                 required 
@@ -75,14 +75,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
                 onChange={handleChange}
                 required
               >
-                <option value="">select</option>
+                <option value="">{data.fields.service}</option>
                 {data.services.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
             </div>
             <div className="form-group">
               <label>{data.fields.city}</label>
               <select disabled>
-                <option>Islamabad</option>
+                <option>{data.fields.city}</option>
               </select>
             </div>
             <div className="form-group">
@@ -93,7 +93,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
                 onChange={handleChange}
                 required
               >
-                <option value="">select</option>
+                <option value="">{data.fields.area}</option>
                 {data.areas.map(a => <option key={a} value={a}>{a}</option>)}
               </select>
             </div>
@@ -101,7 +101,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
               <label>{data.fields.address}</label>
               <textarea 
                 name="address"
-                placeholder="Your Detailed Address" 
+                placeholder={data.placeholders.address}
                 value={formData.address}
                 onChange={handleChange}
                 required
