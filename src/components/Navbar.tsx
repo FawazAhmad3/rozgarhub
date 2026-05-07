@@ -35,9 +35,9 @@ const Navbar: React.FC = () => {
           {data.links.map(link => (
             link.hasDropdown ? (
               <div key={link.name} className="dropdown">
-                <button className="dropdown-toggle nav-link">
+                <Link to="/services" className="dropdown-toggle nav-link">
                   {link.name} <ChevronDown size={18} />
-                </button>
+                </Link>
                 <div className="mega-menu">
                   {servicesData.categories.map((cat) => (
                     <div key={cat.name} className="menu-category">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import homeData from '../data/home.json';
 import '../styles/HeroSlider.css';
 
@@ -33,7 +34,9 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
           <div className="container hero-content">
             <h1 className="hero-title">{slide.title}</h1>
             <p className="hero-subtitle">{slide.subtitle}</p>
-            <button className="btn btn-primary btn-lg">{homeData.hero.cta}</button>
+            <Link to="/services" className="btn btn-primary btn-lg">
+              {homeData.hero.cta}
+            </Link>
           </div>
         </div>
       ))}
