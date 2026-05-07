@@ -1,0 +1,48 @@
+.services-page {
+  padding-bottom: 5rem;
+}
+
+.services-hero {
+  background: linear-gradient(to bottom, rgba(37, 99, 235, 0.05), transparent);
+  text-align: center;
+  padding: 8rem 0 4rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-category-block {
+  margin-bottom: 5rem;
+}
+
+.category-name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-item {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.service-item:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateY(-5px);
+}

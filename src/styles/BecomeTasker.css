@@ -1,0 +1,109 @@
+.tasker-page {
+  padding-bottom: 5rem;
+}
+
+.tasker-hero {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+  text-align: center;
+  padding: 10rem 0 6rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+
+.tasker-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+.benefits-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.benefit-item .icon {
+  color: #10b981;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.benefit-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+  color: var(--text-light);
+}
+
+.contact-card {
+  padding: 4rem;
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-methods {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-method .icon {
+  color: var(--primary);
+  width: 30px;
+  height: 30px;
+}
+
+.contact-method div {
+  text-align: left;
+}
+
+.contact-method span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contact-method strong {
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  .tasker-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .contact-card {
+    padding: 2.5rem;
+  }
+}

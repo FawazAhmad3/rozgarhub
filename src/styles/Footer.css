@@ -1,0 +1,82 @@
+.footer {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 5rem 0 0;
+  margin-top: 5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand .logo-container {
+  margin-bottom: 1.5rem;
+}
+
+.footer-brand .brand-name {
+  color: var(--white);
+}
+
+.footer-desc {
+  max-width: 320px;
+  line-height: 1.8;
+}
+
+.footer h3 {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 1rem;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul a:hover {
+  color: var(--primary);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-item .icon {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
