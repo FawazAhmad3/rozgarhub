@@ -18,7 +18,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const whatsappNumber = '923316677772'; // International format without +
+    const whatsappNumber = data.whatsappNumber; // From JSON
     const message = `*New Service Request - RozgarHub*%0A%0A` +
       `*Name:* ${formData.name}%0A` +
       `*Phone:* ${formData.phone}%0A` +

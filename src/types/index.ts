@@ -65,6 +65,7 @@ export interface HomeData {
       address: string;
       button: string;
     };
+    whatsappNumber: string;
     placeholders: {
       name: string;
       phone: string;
