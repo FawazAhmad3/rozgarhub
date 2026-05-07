@@ -6,6 +6,7 @@
   "categories": [
     {
       "name": "Cleaning",
+      "icon": "Sparkles",
       "items": [
         "Home Cleaning",
         "Move Out Cleaning",
@@ -15,6 +16,7 @@
     },
     {
       "name": "Installation",
+      "icon": "Hammer",
       "items": [
         "TV Mounting",
         "Picture or Shelf Hanging",
@@ -24,6 +26,7 @@
     },
     {
       "name": "Handyman",
+      "icon": "Wrench",
       "items": [
         "Furniture Assembly",
         "General Handyman"
@@ -31,6 +34,7 @@
     },
     {
       "name": "Plumbing",
+      "icon": "Droplets",
       "items": [
         "General Plumbing",
         "Faucets",
@@ -39,6 +43,7 @@
     },
     {
       "name": "Electric",
+      "icon": "Zap",
       "items": [
         "General Electric",
         "Outlets and Switches"
@@ -46,6 +51,7 @@
     },
     {
       "name": "Moving Help",
+      "icon": "Truck",
       "items": [
         "Packing and Unpacking",
         "Loading and Unloading"
@@ -53,6 +59,7 @@
     },
     {
       "name": "Outdoor Projects",
+      "icon": "TreePine",
       "items": [
         "Lawn Care",
         "Gutters and Downspouts",
