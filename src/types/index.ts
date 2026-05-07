@@ -10,19 +10,52 @@ export interface Slide {
 }
 
 export interface Review {
+  id: number;
   name: string;
   rating: number;
   comment: string;
-  date: string;
+  service: string;
+}
+
+export interface NavbarData {
+  brand: string;
+  links: {
+    name: string;
+    path: string;
+    hasDropdown?: boolean;
+  }[];
+  cta: {
+    name: string;
+    path: string;
+  };
+}
+
+export interface FooterData {
+  description: string;
+  quickLinks: {
+    title: string;
+    links: {
+      name: string;
+      path: string;
+    }[];
+  };
+  contact: {
+    title: string;
+    location: string;
+    email: string;
+  };
+  copyright: string;
 }
 
 export interface HomeData {
   pageTitle: string;
   hero: {
     slides: Slide[];
+    cta: string;
   };
   bookingForm: {
     title: string;
+    description: string;
     fields: {
       name: string;
       phone: string;
@@ -31,6 +64,11 @@ export interface HomeData {
       area: string;
       address: string;
       button: string;
+    };
+    placeholders: {
+      name: string;
+      phone: string;
+      address: string;
     };
     services: string[];
     areas: string[];
@@ -46,6 +84,7 @@ export interface HomeData {
   locationSection: {
     title: string;
     description: string;
+    badge: string;
   };
   affiliations: {
     title: string;

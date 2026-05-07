@@ -3,9 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import navbarData from '../data/navbar.json';
 import servicesData from '../data/services.json';
+import type { NavbarData } from '../types';
 import '../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
+  const data = navbarData as NavbarData;
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -24,13 +26,13 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-content">
         <Link to="/" className="logo-container">
-          <img src="/logos/logo.png" alt={navbarData.brand} className="logo-img" />
-          <span className="brand-name">{navbarData.brand}</span>
+          <img src="/logos/logo.png" alt={data.brand} className="logo-img" />
+          <span className="brand-name">{data.brand}</span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="nav-links">
-          {navbarData.links.map(link => (
+          {data.links.map(link => (
             link.hasDropdown ? (
               <div key={link.name} className="dropdown">
                 <button className="dropdown-toggle nav-link">
@@ -53,7 +55,7 @@ const Navbar: React.FC = () => {
               <Link key={link.name} to={link.path} className="nav-link">{link.name}</Link>
             )
           ))}
-          <Link to={navbarData.cta.path} className="btn btn-primary">{navbarData.cta.name}</Link>
+          <Link to={data.cta.path} className="btn btn-primary">{data.cta.name}</Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -64,10 +66,10 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
-        {navbarData.links.map(link => (
+        {data.links.map(link => (
           <Link key={link.name} to={link.path} className="nav-link" onClick={() => setIsOpen(false)}>{link.name}</Link>
         ))}
-        <Link to={navbarData.cta.path} className="btn btn-primary" onClick={() => setIsOpen(false)}>{navbarData.cta.name}</Link>
+        <Link to={data.cta.path} className="btn btn-primary" onClick={() => setIsOpen(false)}>{data.cta.name}</Link>
       </div>
     </nav>
   );
