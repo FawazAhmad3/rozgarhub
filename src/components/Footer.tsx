@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="contact-item">
             <Phone size={18} className="icon" />
-            <span>+92 3XX XXXXXXX</span>
+            <span>03316677772</span>
           </div>
           <div className="contact-item">
             <Mail size={18} className="icon" />
