@@ -3,12 +3,12 @@
   "hero": {
     "slides": [
       {
-        "image": "public/images/slider1.jpg",
+        "image": "/images/slider1.jpg",
         "title": "Professional Home Services at Your Doorstep",
         "subtitle": "Trusted by thousands in Islamabad"
       },
       {
-        "image": "public/images/slider2.jpg",
+        "image": "/images/slider2.jpg",
         "title": "Expert Repairs & Cleaning",
         "subtitle": "Quality service you can rely on"
       }
@@ -32,23 +32,8 @@
       "Plumbing Services"
     ],
     "areas": [
-      "F-6",
-      "F-7",
-      "F-8",
-      "G-6",
-      "G-7",
-      "G-8",
-      "G-9",
-      "G-10",
-      "G-11",
-      "I-8",
-      "I-9",
-      "I-10",
-      "DHA",
-      "Bahria Town",
-      "Gulberg",
-      "E-7",
-      "E-11"
+      "F-6", "F-7", "F-8", "G-6", "G-7", "G-8", "G-9", "G-10", "G-11",
+      "I-8", "I-9", "I-10", "DHA", "Bahria Town", "Gulberg", "E-7", "E-11"
     ]
   },
   "topServices": {
@@ -57,22 +42,22 @@
       {
         "id": "appliance-repair",
         "name": "Home Appliance Repair",
-        "image": "public/images/appliance.jpg"
+        "image": "/images/appliance.jpg"
       },
       {
         "id": "cleaning",
         "name": "Cleaning Services",
-        "image": "public/images/cleaning.jpg"
+        "image": "/images/cleaning.jpg"
       },
       {
         "id": "electrical",
         "name": "Electrical Services",
-        "image": "public/images/electrical.jpg"
+        "image": "/images/electrical.jpg"
       },
       {
         "id": "plumbing",
         "name": "Plumbing Services",
-        "image": "public/images/plumbing.jpg"
+        "image": "/images/plumbing.jpg"
       }
     ]
   },
@@ -83,9 +68,9 @@
   "affiliations": {
     "title": "Our Affiliation",
     "logos": [
-      "public/logos/comp1.png",
-      "public/logos/comp2.png",
-      "public/logos/comp3.png"
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
     ]
   }
 }

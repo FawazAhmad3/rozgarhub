@@ -5,9 +5,9 @@
 
 .booking-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 5rem;
-  align-items: center;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 8rem;
+  align-items: flex-start;
 }
 
 .text-left {
