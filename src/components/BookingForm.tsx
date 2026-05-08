@@ -19,7 +19,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
     e.preventDefault();
     
     const whatsappNumber = data.whatsappNumber; // From JSON
-    const message = `*New Service Request - RozgarHub*%0A%0A` +
+    const message = `*New Service Request - CITY SAHULAT SERVICES*%0A%0A` +
       `*Name:* ${formData.name}%0A` +
       `*Phone:* ${formData.phone}%0A` +
       `*Service:* ${formData.service}%0A` +
