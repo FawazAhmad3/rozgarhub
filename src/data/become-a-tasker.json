@@ -1,29 +1,32 @@
 {
   "header": {
     "title": "Become a Tasker",
-    "subtitle": "Join our network of skilled professionals and start earning today."
+    "subtitle": "Join our network of skilled professionals and start earning today in Islamabad."
   },
   "whyJoin": {
     "title": "Why join CITY SAHULAT SERVICES?",
     "benefits": [
       {
+        "icon": "Clock",
         "title": "Be your own boss",
         "description": "Work when you want, where you want. You have full control over your schedule."
       },
       {
+        "icon": "Wallet",
         "title": "Set your own rates",
         "description": "You decide how much your time and skills are worth. Get paid what you deserve."
       },
       {
+        "icon": "TrendingUp",
         "title": "Grow your business",
         "description": "We connect you with thousands of customers in Islamabad looking for your expertise."
       }
     ]
   },
   "contact": {
-    "title": "Contact Us to Join",
-    "description": "If you are skilled in any of our services, contact us today and we will add you to our platform.",
+    "title": "Ready to Start?",
+    "description": "If you are skilled in any of our services, contact us today and we will add you to our premium platform.",
     "phone": "03316677772",
-    "email": "join@rozgarhub.com"
+    "email": "join@citysahulat.com"
   }
 }

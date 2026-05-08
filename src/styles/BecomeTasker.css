@@ -1,110 +1,162 @@
 .become-tasker-page {
   padding-top: 80px;
   padding-bottom: 5rem;
+  background: var(--bg-alt);
 }
 
 .page-header {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+  background: linear-gradient(135deg, rgba(0, 35, 71, 0.05) 0%, rgba(197, 160, 89, 0.1) 100%);
   text-align: center;
-  padding: 6rem 0 4rem;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
+  padding: 6rem 0 5rem;
+  margin-bottom: 4rem;
 }
 
-.tasker-grid {
+.benefits-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  margin-top: 5rem;
-  align-items: center;
-}
-
-.benefits-section h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 3rem;
-}
-
-.benefit-item {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.benefit-item .icon {
-  color: #10b981;
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-}
-
-.benefit-item h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.benefit-item p {
-  color: var(--text-light);
-}
-
-.contact-card {
-  padding: 4rem;
-  text-align: center;
-}
-
-.contact-card h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact-methods {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
   margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
-.contact-method {
+.benefit-card {
+  padding: 3rem 2.5rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0, 35, 71, 0.05);
+  background: var(--white);
+  border-radius: 1.5rem;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 35, 71, 0.1);
+  border-color: var(--accent);
+}
+
+.benefit-icon-wrapper {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  width: 70px;
+  height: 70px;
+  border-radius: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 20px rgba(0, 35, 71, 0.2);
 }
 
-.contact-method .icon {
+.benefit-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
   color: var(--primary);
-  width: 30px;
-  height: 30px;
+  margin-bottom: 1rem;
 }
 
-.contact-method div {
+.benefit-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.contact-cta {
+  margin-top: 6rem;
+}
+
+.cta-box {
+  padding: 5rem;
+  text-align: center;
+  background: var(--white);
+  border-radius: 2.5rem;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+}
+
+.cta-box h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.cta-box p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 320px;
   text-align: left;
 }
 
-.contact-method span {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--text-light);
+.contact-btn.phone {
+  background: var(--primary);
+}
+
+.contact-btn.phone, .contact-btn.phone * {
+  color: #ffffff !important;
+}
+
+.contact-btn.email {
+  background: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 35, 71, 0.2);
+}
+
+.contact-btn.phone:hover {
+  background: var(--primary-dark);
+}
+
+.contact-btn.email:hover {
+  background: var(--primary);
+  color: var(--white) !important;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-label {
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  color: inherit;
 }
 
-.contact-method strong {
+.btn-value {
   font-size: 1.25rem;
-  color: var(--text);
+  font-weight: 800;
+  color: inherit;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-@media (max-width: 992px) {
-  .tasker-grid {
-    grid-template-columns: 1fr;
-    gap: 4rem;
+@media (max-width: 768px) {
+  .cta-box {
+    padding: 3rem 2rem;
   }
-  .contact-card {
-    padding: 2.5rem;
+  .contact-btn {
+    width: 100%;
+    min-width: unset;
   }
 }

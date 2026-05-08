@@ -29,11 +29,13 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
         <div
           key={index}
           className={`slide ${index === current ? 'active' : ''}`}
-          style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${slide.image})` }}
+          style={{ 
+            backgroundImage: `linear-gradient(rgba(0, 35, 71, 0.7), rgba(0, 35, 71, 0.4)), url(${slide.image})` 
+          }}
         >
-          <div className="container hero-content">
-            <h1 className="hero-title">{slide.title}</h1>
-            <p className="hero-subtitle">{slide.subtitle}</p>
+          <div className="container slide-content">
+            <h1 className="slide-title">{slide.title}</h1>
+            <p className="slide-subtitle">{slide.subtitle}</p>
             <Link to="/services" className="btn btn-primary btn-lg">
               {homeData.hero.cta}
             </Link>

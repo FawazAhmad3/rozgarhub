@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -20,11 +21,13 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    // Reset scroll state check on page change
+    setScrolled(window.scrollY > 20);
   }, [location]);
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container navbar-content">
+    <nav className={`navbar ${scrolled || !isHomePage ? 'scrolled' : ''}`}>
+      <div className="navbar-content">
         <Link to="/" className="logo-container">
           <img src="/logos/logo.png" alt={data.brand} className="logo-img" />
           <span className="brand-name">{data.brand}</span>
@@ -35,15 +38,15 @@ const Navbar: React.FC = () => {
           {data.links.map(link => (
             link.hasDropdown ? (
               <div key={link.name} className="dropdown">
-                <Link to="/services" className="dropdown-toggle nav-link">
+                <Link to="/services" className="dropdown-toggle">
                   {link.name} <ChevronDown size={18} />
                 </Link>
                 <div className="mega-menu">
-                  {servicesData.categories.map((cat) => (
+                  {servicesData.categories.map((cat: any) => (
                     <div key={cat.name} className="menu-category">
                       <h3>{cat.name}</h3>
                       <div className="category-links">
-                        {cat.items.map((item) => (
+                        {cat.items.map((item: string) => (
                           <Link key={item} to="/services" className="category-link">{item}</Link>
                         ))}
                       </div>
@@ -55,12 +58,12 @@ const Navbar: React.FC = () => {
               <Link key={link.name} to={link.path} className="nav-link">{link.name}</Link>
             )
           ))}
-          <Link to={data.cta.path} className="btn btn-primary">{data.cta.name}</Link>
+          <Link to={data.cta.path} className="btn-cta">{data.cta.name}</Link>
         </div>
 
         {/* Mobile Toggle */}
         <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
       </div>
 
@@ -69,7 +72,7 @@ const Navbar: React.FC = () => {
         {data.links.map(link => (
           <Link key={link.name} to={link.path} className="nav-link" onClick={() => setIsOpen(false)}>{link.name}</Link>
         ))}
-        <Link to={data.cta.path} className="btn btn-primary" onClick={() => setIsOpen(false)}>{data.cta.name}</Link>
+        <Link to={data.cta.path} className="btn-cta" onClick={() => setIsOpen(false)}>{data.cta.name}</Link>
       </div>
     </nav>
   );
