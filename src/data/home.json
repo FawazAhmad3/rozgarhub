@@ -91,10 +91,6 @@
   },
   "affiliations": {
     "title": "Our Affiliation",
-    "logos": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-    ]
+    "logos": []
   }
 }
