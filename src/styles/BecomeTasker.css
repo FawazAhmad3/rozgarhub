@@ -83,68 +83,27 @@
   padding: 0 1.5rem;
 }
 
-/* Benefits Section */
-.benefits-section {
-  padding: 5rem 0;
-  background: #f8fafc;
-}
-
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.benefit-card {
-  padding: 2.5rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.benefit-card:hover {
-  transform: translateY(-10px);
-}
-
-.benefit-icon-wrapper {
-  width: 80px;
-  height: 80px;
-  background: #e0f2fe;
-  color: #0284c7;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-}
 
 /* Team Section */
 .team-section {
-  padding: 5rem 0;
+  padding: 8rem 0;
+  background: #ffffff;
 }
 
-.filter-controls {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 3rem 0;
+.section-title-dark {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  text-align: center;
 }
 
-.filter-btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 2rem;
-  border: 1px solid #e2e8f0;
-  background: white;
+.section-subtitle-dark {
+  font-size: 1.25rem;
   color: #64748b;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-btn.active {
-  background: #0f172a;
-  color: white;
-  border-color: #0f172a;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  text-align: center;
 }
 
 .team-grid {

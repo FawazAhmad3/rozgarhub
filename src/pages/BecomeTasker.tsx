@@ -4,8 +4,7 @@ import becomeTaskerData from '../data/become-a-tasker.json';
 import '../styles/BecomeTasker.css';
 
 const BecomeTasker: React.FC = () => {
-  const { header, whyJoin, team, joinForm, contact } = becomeTaskerData;
-  const [filter, setFilter] = useState<'all' | 'permanent' | 'task-based'>('all');
+  const { header, team, joinForm, contact } = becomeTaskerData;
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -15,7 +14,6 @@ const BecomeTasker: React.FC = () => {
     address: ''
   });
 
-  const filteredTaskers = team.taskers.filter(t => filter === 'all' || t.type === filter);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,56 +48,14 @@ const BecomeTasker: React.FC = () => {
         </div>
       </header>
 
-      {/* Benefits Section */}
-      <section className="benefits-section">
-        <div className="container">
-          <h2 className="section-title">{whyJoin.title}</h2>
-          <div className="benefits-grid">
-            {whyJoin.benefits.map((benefit, idx) => {
-              const IconComponent = (Icons as any)[benefit.icon] || Icons.CheckCircle;
-              return (
-                <div key={idx} className="benefit-card glass-card">
-                  <div className="benefit-icon-wrapper">
-                    <IconComponent size={32} />
-                  </div>
-                  <h3>{benefit.title}</h3>
-                  <p>{benefit.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Team Profiles Section */}
       <section className="team-section">
         <div className="container">
-          <h2 className="section-title">{team.title}</h2>
-          <p className="section-subtitle">{team.subtitle}</p>
+          <h2 className="section-title-dark">{team.title}</h2>
+          <p className="section-subtitle-dark">{team.subtitle}</p>
           
-          <div className="filter-controls">
-            <button 
-              className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
-              onClick={() => setFilter('all')}
-            >
-              All Taskers
-            </button>
-            <button 
-              className={`filter-btn ${filter === 'permanent' ? 'active' : ''}`}
-              onClick={() => setFilter('permanent')}
-            >
-              Permanent Staff
-            </button>
-            <button 
-              className={`filter-btn ${filter === 'task-based' ? 'active' : ''}`}
-              onClick={() => setFilter('task-based')}
-            >
-              Task-Based
-            </button>
-          </div>
-
           <div className="team-grid">
-            {filteredTaskers.map((tasker) => (
+            {team.taskers.map((tasker) => (
               <div key={tasker.id} className="tasker-card glass-card">
                 <div className="tasker-image-wrapper">
                   <img src={tasker.image} alt={tasker.name} />
