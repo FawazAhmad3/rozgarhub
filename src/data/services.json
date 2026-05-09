@@ -8,41 +8,38 @@
       "name": "Cleaning",
       "icon": "Sparkles",
       "items": [
-        "Home Cleaning",
-        "Move Out Cleaning",
-        "Office Cleaning",
-        "Deep Cleaning"
+        { "id": "home-cleaning", "name": "Home Cleaning" },
+        { "id": "move-out-cleaning", "name": "Move Out Cleaning" },
+        { "id": "office-cleaning", "name": "Office Cleaning" },
+        { "id": "deep-cleaning", "name": "Deep Cleaning" }
       ]
     },
     {
       "name": "Plumbing",
       "icon": "Droplets",
       "items": [
-        "General Plumbing",
-        "Faucets",
-        "Toilets"
+        { "id": "general-plumbing", "name": "General Plumbing" },
+        { "id": "faucets", "name": "Faucets" },
+        { "id": "toilets", "name": "Toilets" }
       ]
     },
     {
       "name": "Electrical & Installation",
       "icon": "Zap",
       "items": [
-        "TV Mounting",
-        "Picture or Shelf Hanging",
-        "Light Fixtures",
-        "Ceiling Fans",
-        "General Electric",
-        "Outlets and Switches"
+        { "id": "tv-mounting", "name": "TV Mounting" },
+        { "id": "light-fixtures", "name": "Light Fixtures" },
+        { "id": "ceiling-fans", "name": "Ceiling Fans" },
+        { "id": "general-electric", "name": "General Electric" }
       ]
     },
     {
       "name": "Moving & Outdoor Help",
       "icon": "Truck",
       "items": [
-        "Packing and Unpacking",
-        "Loading and Unloading",
-        "Lawn Care",
-        "Gutters and Downspouts"
+        { "id": "packing", "name": "Packing and Unpacking" },
+        { "id": "lawn-care", "name": "Lawn Care" },
+        { "id": "gutters", "name": "Gutters and Downspouts" }
       ]
     }
   ]

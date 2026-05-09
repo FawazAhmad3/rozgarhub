@@ -1,9 +1,12 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
 import servicesData from '../data/services.json';
+import { useService } from '../context/ServiceContext';
 import '../styles/Services.css';
 
 const Services: React.FC = () => {
+  const { openService } = useService();
+
   return (
     <div className="services-page">
       <header className="services-header">
@@ -27,10 +30,10 @@ const Services: React.FC = () => {
                   <h2 className="category-title">{cat.name}</h2>
                 </div>
                 <ul className="category-list">
-                  {cat.items.map((item) => (
-                    <li key={item}>
+                  {cat.items.map((item: any) => (
+                    <li key={item.id} onClick={() => openService(item)} className="clickable-item">
                       <Icons.CheckCircle2 size={16} className="check-icon" />
-                      {item}
+                      {item.name}
                     </li>
                   ))}
                 </ul>

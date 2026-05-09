@@ -4,12 +4,15 @@ import * as Icons from 'lucide-react';
 import navbarData from '../data/navbar.json';
 import servicesData from '../data/services.json';
 import type { NavbarData } from '../types';
+import { useService } from '../context/ServiceContext';
 import '../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
   const data = navbarData as NavbarData;
+  const { openService } = useService();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
@@ -21,9 +24,13 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     setIsOpen(false);
-    // Reset scroll state check on page change
     setScrolled(window.scrollY > 20);
   }, [location]);
+
+  const handleServiceClick = (e: React.MouseEvent, service: any) => {
+    e.preventDefault();
+    openService(service);
+  };
 
   return (
     <nav className={`navbar ${scrolled || !isHomePage ? 'scrolled' : ''}`}>
@@ -51,8 +58,14 @@ const Navbar: React.FC = () => {
                           <h3>{cat.name}</h3>
                         </div>
                         <div className="category-links">
-                          {cat.items.map((item: string) => (
-                            <Link key={item} to="/services" className="category-link">{item}</Link>
+                          {cat.items.map((item: any) => (
+                            <button 
+                              key={item.id} 
+                              onClick={(e) => handleServiceClick(e, item)} 
+                              className="category-link-btn"
+                            >
+                              {item.name}
+                            </button>
                           ))}
                         </div>
                       </div>

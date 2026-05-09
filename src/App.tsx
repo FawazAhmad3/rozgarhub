@@ -6,23 +6,40 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Reviews from './pages/Reviews';
 import BecomeTasker from './pages/BecomeTasker';
+import ServiceModal from './components/ServiceModal';
+import { ServiceProvider, useService } from './context/ServiceContext';
 import './index.css';
+
+const AppContent: React.FC = () => {
+  const { selectedService, isModalOpen, closeService } = useService();
+  
+  return (
+    <div className="app-wrapper">
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/become-a-tasker" element={<BecomeTasker />} />
+        </Routes>
+      </main>
+      <Footer />
+      <ServiceModal 
+        service={selectedService} 
+        isOpen={isModalOpen} 
+        onClose={closeService} 
+      />
+    </div>
+  );
+};
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app-wrapper">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/become-a-tasker" element={<BecomeTasker />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <ServiceProvider>
+        <AppContent />
+      </ServiceProvider>
     </Router>
   );
 };

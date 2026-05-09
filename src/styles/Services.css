@@ -71,6 +71,18 @@
   gap: 1rem;
 }
 
+.clickable-item {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.clickable-item:hover {
+  background: rgba(197, 160, 89, 0.1);
+  color: var(--primary);
+}
+
 .category-list li {
   display: flex;
   align-items: center;
@@ -78,7 +90,7 @@
   font-size: 1.05rem;
   color: var(--text);
   font-weight: 500;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .category-card:hover .category-list li {
