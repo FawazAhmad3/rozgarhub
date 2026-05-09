@@ -32,15 +32,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="location-banner">
-        <div className="container text-center">
-          <h2 className="banner-title">{data.locationSection.title}</h2>
-          <p className="banner-desc">{data.locationSection.description}</p>
-          <div className="location-badge">
-            <span className="dot"></span> {data.locationSection.badge}
-          </div>
-        </div>
-      </section>
+
 
       <section className="affiliations">
         <div className="container">

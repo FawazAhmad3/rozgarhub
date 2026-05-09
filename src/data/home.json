@@ -11,6 +11,26 @@
         "image": "/images/slider2.jpg",
         "title": "Expert Repairs & Cleaning",
         "subtitle": "Quality service you can rely on"
+      },
+      {
+        "image": "/images/cleaning.jpg",
+        "title": "Deep Cleaning for Your Home",
+        "subtitle": "Safe and hygienic cleaning solutions"
+      },
+      {
+        "image": "/images/electrical.jpg",
+        "title": "Certified Electrical Services",
+        "subtitle": "Safe repairs for your peace of mind"
+      },
+      {
+        "image": "/images/plumbing.jpg",
+        "title": "Reliable Plumbing Experts",
+        "subtitle": "Quick fixes for all your plumbing needs"
+      },
+      {
+        "image": "/images/appliance.jpg",
+        "title": "Appliance Repair & Service",
+        "subtitle": "Expert care for your home appliances"
       }
     ],
     "cta": "Explore Services"
@@ -20,26 +40,30 @@
     "description": "Expert help for your home is just a few clicks away. Reliable professionals at your doorstep.",
     "fields": {
       "name": "Name",
-      "phone": "03XXXXXXXXX",
+      "phone": "Contact Number",
       "service": "Select Service",
       "city": "Islamabad",
       "area": "Area",
       "address": "Address",
-      "button": "Request a call"
+      "button": "Book your Service"
     },
     "whatsappNumber": "923316677772",
     "placeholders": {
       "name": "Your Name",
-      "phone": "03XXXXXXXXX",
+      "phone": "Your contact number",
       "address": "Your Detailed Address"
     },
     "services": [
-      "Home Appliance Repair",
       "Cleaning Services",
       "Electrical Services",
-      "Plumbing Services"
+      "Plumbing Services",
+      "Home Appliance Repair"
     ],
     "areas": [
+      "Barakahu",
+      "Check Shahzad",
+      "Tramri",
+      "Alipur",
       "F-6",
       "F-7",
       "F-8",
@@ -49,18 +73,11 @@
       "G-9",
       "G-10",
       "G-11",
-      "I-8",
-      "I-9",
-      "I-10",
-      "DHA",
-      "Bahria Town",
-      "Gulberg",
-      "E-7",
-      "E-11"
+      "Bahria Town"
     ]
   },
   "topServices": {
-    "title": "Our Top services",
+    "title": "Our Premium Services",
     "items": [
       {
         "id": "appliance-repair",
