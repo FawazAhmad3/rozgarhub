@@ -23,8 +23,71 @@
       }
     ]
   },
+  "team": {
+    "title": "Our Skilled Taskers",
+    "subtitle": "Meet the professionals who make our service exceptional.",
+    "taskers": [
+      {
+        "id": "t1",
+        "name": "Ahmed Khan",
+        "role": "Master Plumber",
+        "type": "permanent",
+        "experience": "8+ Years",
+        "specialty": "Pipe Fitting & Leak Repair",
+        "image": "/images/tasker1.jpg"
+      },
+      {
+        "id": "t2",
+        "name": "Sajid Ali",
+        "role": "Senior Electrician",
+        "type": "permanent",
+        "experience": "10+ Years",
+        "specialty": "Wiring & Fixtures",
+        "image": "/images/tasker2.jpg"
+      },
+      {
+        "id": "t3",
+        "name": "Bilal Hassan",
+        "role": "Cleaning Specialist",
+        "type": "task-based",
+        "experience": "5+ Years",
+        "specialty": "Deep Cleaning",
+        "image": "/images/tasker3.jpg"
+      },
+      {
+        "id": "t4",
+        "name": "Zubair Shah",
+        "role": "Handyman",
+        "type": "task-based",
+        "experience": "6+ Years",
+        "specialty": "TV Mounting & Carpentry",
+        "image": "/images/tasker4.jpg"
+      }
+    ]
+  },
+  "joinForm": {
+    "title": "Join Our Team",
+    "subtitle": "Fill out the form below to apply as a tasker.",
+    "whatsappNumber": "923316677772",
+    "fields": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "skill": "Primary Skill",
+      "experience": "Years of Experience",
+      "type": "Employment Type",
+      "address": "Current Address",
+      "button": "Submit Application"
+    },
+    "placeholders": {
+      "name": "Enter your full name",
+      "phone": "e.g. 0300 1234567",
+      "skill": "e.g. Plumbing, Electrical, Cleaning",
+      "experience": "e.g. 5 Years",
+      "address": "Your detailed address in Islamabad"
+    }
+  },
   "contact": {
-    "title": "Ready to Start?",
+    "title": "Still Have Questions?",
     "description": "If you are skilled in any of our services, contact us today and we will add you to our premium platform.",
     "phone": "03316677772",
     "email": "join@citysahulat.com"

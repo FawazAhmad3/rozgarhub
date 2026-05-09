@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Icons from 'lucide-react';
 import becomeTaskerData from '../data/become-a-tasker.json';
 import '../styles/BecomeTasker.css';
 
 const BecomeTasker: React.FC = () => {
-  const { header, whyJoin, contact } = becomeTaskerData;
+  const { header, whyJoin, team, joinForm, contact } = becomeTaskerData;
+  const [filter, setFilter] = useState<'all' | 'permanent' | 'task-based'>('all');
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    skill: '',
+    experience: '',
+    type: 'permanent',
+    address: ''
+  });
+
+  const filteredTaskers = team.taskers.filter(t => filter === 'all' || t.type === filter);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const message = `*New Tasker Application - CITY SAHULAT SERVICES*%0A%0A` +
+      `*Name:* ${formData.name}%0A` +
+      `*Phone:* ${formData.phone}%0A` +
+      `*Primary Skill:* ${formData.skill}%0A` +
+      `*Experience:* ${formData.experience}%0A` +
+      `*Application Type:* ${formData.type.toUpperCase()}%0A` +
+      `*Address:* ${formData.address}`;
+    
+    const whatsappUrl = `whatsapp://send?phone=${joinForm.whatsappNumber}&text=${message}`;
+    window.location.assign(whatsappUrl);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
   return (
     <div className="become-tasker-page">
@@ -12,9 +42,15 @@ const BecomeTasker: React.FC = () => {
         <div className="container">
           <h1 className="section-title">{header.title}</h1>
           <p className="section-subtitle">{header.subtitle}</p>
+          <div className="header-actions">
+            <a href="#join-form" className="btn-header-primary">
+              Join Our Network <Icons.ArrowRight size={20} />
+            </a>
+          </div>
         </div>
       </header>
 
+      {/* Benefits Section */}
       <section className="benefits-section">
         <div className="container">
           <h2 className="section-title">{whyJoin.title}</h2>
@@ -35,6 +71,153 @@ const BecomeTasker: React.FC = () => {
         </div>
       </section>
 
+      {/* Team Profiles Section */}
+      <section className="team-section">
+        <div className="container">
+          <h2 className="section-title">{team.title}</h2>
+          <p className="section-subtitle">{team.subtitle}</p>
+          
+          <div className="filter-controls">
+            <button 
+              className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
+              onClick={() => setFilter('all')}
+            >
+              All Taskers
+            </button>
+            <button 
+              className={`filter-btn ${filter === 'permanent' ? 'active' : ''}`}
+              onClick={() => setFilter('permanent')}
+            >
+              Permanent Staff
+            </button>
+            <button 
+              className={`filter-btn ${filter === 'task-based' ? 'active' : ''}`}
+              onClick={() => setFilter('task-based')}
+            >
+              Task-Based
+            </button>
+          </div>
+
+          <div className="team-grid">
+            {filteredTaskers.map((tasker) => (
+              <div key={tasker.id} className="tasker-card glass-card">
+                <div className="tasker-image-wrapper">
+                  <img src={tasker.image} alt={tasker.name} />
+                  <span className={`tasker-type-tag ${tasker.type}`}>{tasker.type}</span>
+                </div>
+                <div className="tasker-info">
+                  <h3>{tasker.name}</h3>
+                  <span className="tasker-role">{tasker.role}</span>
+                  <div className="tasker-stats">
+                    <div className="stat-item">
+                      <Icons.Award size={16} />
+                      <span>{tasker.experience} exp</span>
+                    </div>
+                    <div className="stat-item">
+                      <Icons.Star size={16} />
+                      <span>{tasker.specialty}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Join Form Section */}
+      <section className="join-form-section" id="join-form">
+        <div className="container">
+          <div className="form-wrapper glass-card">
+            <div className="form-header">
+              <h2>{joinForm.title}</h2>
+              <p>{joinForm.subtitle}</p>
+            </div>
+            
+            <form className="join-form" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>{joinForm.fields.name}</label>
+                  <input 
+                    type="text" 
+                    name="name" 
+                    placeholder={joinForm.placeholders.name} 
+                    value={formData.name}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+                <div className="form-group">
+                  <label>{joinForm.fields.phone}</label>
+                  <input 
+                    type="tel" 
+                    name="phone" 
+                    placeholder={joinForm.placeholders.phone} 
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label>{joinForm.fields.skill}</label>
+                  <input 
+                    type="text" 
+                    name="skill" 
+                    placeholder={joinForm.placeholders.skill} 
+                    value={formData.skill}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+                <div className="form-group">
+                  <label>{joinForm.fields.experience}</label>
+                  <input 
+                    type="text" 
+                    name="experience" 
+                    placeholder={joinForm.placeholders.experience} 
+                    value={formData.experience}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>{joinForm.fields.type}</label>
+                <select 
+                  name="type" 
+                  value={formData.type}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="permanent">Permanent Staff</option>
+                  <option value="task-based">Task-Based Contractor</option>
+                </select>
+              </div>
+
+              <div className="form-group">
+                <label>{joinForm.fields.address}</label>
+                <textarea 
+                  name="address" 
+                  placeholder={joinForm.placeholders.address} 
+                  value={formData.address}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" className="btn-submit">
+                {joinForm.fields.button} <Icons.Send size={20} />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Legacy Contact Section */}
       <section className="contact-cta">
         <div className="container">
           <div className="cta-box glass-card">
