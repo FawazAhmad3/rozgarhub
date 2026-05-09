@@ -15,24 +15,6 @@
       ]
     },
     {
-      "name": "Installation",
-      "icon": "Hammer",
-      "items": [
-        "TV Mounting",
-        "Picture or Shelf Hanging",
-        "Light Fixtures",
-        "Ceiling Fans"
-      ]
-    },
-    {
-      "name": "Handyman",
-      "icon": "Wrench",
-      "items": [
-        "Furniture Assembly",
-        "General Handyman"
-      ]
-    },
-    {
       "name": "Plumbing",
       "icon": "Droplets",
       "items": [
@@ -42,30 +24,25 @@
       ]
     },
     {
-      "name": "Electric",
+      "name": "Electrical & Installation",
       "icon": "Zap",
       "items": [
+        "TV Mounting",
+        "Picture or Shelf Hanging",
+        "Light Fixtures",
+        "Ceiling Fans",
         "General Electric",
         "Outlets and Switches"
       ]
     },
     {
-      "name": "Moving Help",
+      "name": "Moving & Outdoor Help",
       "icon": "Truck",
       "items": [
         "Packing and Unpacking",
-        "Loading and Unloading"
-      ]
-    },
-    {
-      "name": "Outdoor Projects",
-      "icon": "TreePine",
-      "items": [
+        "Loading and Unloading",
         "Lawn Care",
-        "Gutters and Downspouts",
-        "Tree Removal",
-        "Tree Trimming",
-        "Wood Fence Installation"
+        "Gutters and Downspouts"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import * as Icons from 'lucide-react';
 import navbarData from '../data/navbar.json';
 import servicesData from '../data/services.json';
 import type { NavbarData } from '../types';
@@ -39,19 +39,25 @@ const Navbar: React.FC = () => {
             link.hasDropdown ? (
               <div key={link.name} className="dropdown">
                 <Link to="/services" className="dropdown-toggle">
-                  {link.name} <ChevronDown size={18} />
+                  {link.name} <Icons.ChevronDown size={18} />
                 </Link>
                 <div className="mega-menu">
-                  {servicesData.categories.map((cat: any) => (
-                    <div key={cat.name} className="menu-category">
-                      <h3>{cat.name}</h3>
-                      <div className="category-links">
-                        {cat.items.map((item: string) => (
-                          <Link key={item} to="/services" className="category-link">{item}</Link>
-                        ))}
+                  {servicesData.categories.map((cat: any) => {
+                    const IconComponent = (Icons as any)[cat.icon] || Icons.HelpCircle;
+                    return (
+                      <div key={cat.name} className="menu-category">
+                        <div className="category-header-small">
+                          <IconComponent size={18} className="cat-icon" />
+                          <h3>{cat.name}</h3>
+                        </div>
+                        <div className="category-links">
+                          {cat.items.map((item: string) => (
+                            <Link key={item} to="/services" className="category-link">{item}</Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ) : (
@@ -63,7 +69,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={30} /> : <Menu size={30} />}
+          {isOpen ? <Icons.X size={30} /> : <Icons.Menu size={30} />}
         </button>
       </div>
 
