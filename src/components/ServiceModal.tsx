@@ -12,6 +12,7 @@ interface ServiceModalProps {
 
 const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose }) => {
   const [activeMedia, setActiveMedia] = useState<string | null>(null);
+  const Player = ReactPlayer as any;
 
   useEffect(() => {
     if (isOpen) {
@@ -76,7 +77,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
                     >
                       {activeMedia && isVideo(activeMedia) ? (
                         <div className="player-wrapper">
-                          <ReactPlayer 
+                          <Player 
                             url={activeMedia} 
                             width="100%" 
                             height="100%" 
