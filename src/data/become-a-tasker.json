@@ -62,6 +62,24 @@
         "experience": "6+ Years",
         "specialty": "TV Mounting & Carpentry",
         "image": "/images/tasker4.jpg"
+      },
+      {
+        "id": "t5",
+        "name": "Hamza Yusuf",
+        "role": "Senior AC Technician",
+        "type": "task-based",
+        "experience": "7+ Years",
+        "specialty": "AC Repair & Servicing",
+        "image": "/images/hamza_yusuf.png"
+      },
+      {
+        "id": "t6",
+        "name": "Farooq Sheikh",
+        "role": "Professional Painter",
+        "type": "permanent",
+        "experience": "12+ Years",
+        "specialty": "Interior & Exterior Painting",
+        "image": "/images/farooq_sheikh.png"
       }
     ]
   },

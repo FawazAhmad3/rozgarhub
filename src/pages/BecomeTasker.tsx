@@ -14,6 +14,19 @@ const BecomeTasker: React.FC = () => {
     address: ''
   });
 
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filterType, setFilterType] = useState('all');
+
+  const filteredTaskers = team.taskers.filter(tasker => {
+    const matchesSearch = tasker.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                         tasker.role.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         tasker.specialty.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    const matchesFilter = filterType === 'all' || tasker.type === filterType;
+    
+    return matchesSearch && matchesFilter;
+  });
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,9 +66,41 @@ const BecomeTasker: React.FC = () => {
         <div className="container">
           <h2 className="section-title-dark">{team.title}</h2>
           <p className="section-subtitle-dark">{team.subtitle}</p>
+
+          <div className="filter-controls">
+            <div className="search-box">
+              <Icons.Search size={20} />
+              <input 
+                type="text" 
+                placeholder="Search by name, role or skill..." 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+            <div className="filter-tabs">
+              <button 
+                className={`filter-btn ${filterType === 'all' ? 'active' : ''}`}
+                onClick={() => setFilterType('all')}
+              >
+                All Taskers
+              </button>
+              <button 
+                className={`filter-btn ${filterType === 'permanent' ? 'active' : ''}`}
+                onClick={() => setFilterType('permanent')}
+              >
+                Permanent
+              </button>
+              <button 
+                className={`filter-btn ${filterType === 'task-based' ? 'active' : ''}`}
+                onClick={() => setFilterType('task-based')}
+              >
+                Task Based
+              </button>
+            </div>
+          </div>
           
           <div className="team-grid">
-            {team.taskers.map((tasker) => (
+            {filteredTaskers.map((tasker) => (
               <div key={tasker.id} className="tasker-card glass-card">
                 <div className="tasker-image-wrapper">
                   <img src={tasker.image} alt={tasker.name} />
