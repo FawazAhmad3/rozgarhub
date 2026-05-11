@@ -11,9 +11,9 @@
   margin-bottom: 4rem;
 }
 
-.section-subtitle {
+.services-page .section-subtitle {
   font-size: 1.25rem;
-  color: var(--text-light);
+  color: #000000;
   max-width: 600px;
   margin: -3rem auto 0;
 }

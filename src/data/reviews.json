@@ -1,36 +1,73 @@
 {
   "header": {
-    "title": "Customer Reviews",
-    "subtitle": "What our customers in Islamabad have to say about us."
+    "title": "Customer Testimonials",
+    "subtitle": "Discover why thousands of residents in Islamabad trust CITY SAHULAT SERVICES for their home needs.",
+    "stats": {
+      "averageRating": "4.9",
+      "totalReviews": "1,250+",
+      "verifiedRate": "99%"
+    }
   },
   "items": [
     {
       "id": 1,
       "name": "Ahmed Khan",
       "rating": 5,
-      "comment": "Excellent cleaning service. They were on time and very professional. Highly recommended for home cleaning in Islamabad.",
-      "service": "Home Cleaning"
+      "comment": "The home cleaning service was impeccable. The team arrived on time and used professional equipment. Our house in Islamabad has never looked better. Truly a 5-star experience!",
+      "service": "Home Cleaning",
+      "date": "2 days ago",
+      "avatarColor": "#4f46e5",
+      "verified": true
     },
     {
       "id": 2,
       "name": "Sarah Malik",
       "rating": 4,
-      "comment": "Had my TV mounted. The tasker did a great job, though he was slightly late. Quality of work is top-notch.",
-      "service": "TV Mounting"
+      "comment": "Excellent TV mounting service. The technician was knowledgeable and ensured all cables were neatly hidden. He was a few minutes late, but the quality of work more than made up for it.",
+      "service": "TV Mounting",
+      "date": "1 week ago",
+      "avatarColor": "#0891b2",
+      "verified": true
     },
     {
       "id": 3,
       "name": "Zubair Ahmed",
       "rating": 5,
-      "comment": "RozgarHub is my go-to for all plumbing needs. Quick response and expert fixing. Very reliable.",
-      "service": "General Plumbing"
+      "comment": "Emergency plumbing handled perfectly. Had a major leak at 10 PM and they responded within 30 minutes. Fixed everything without any fuss. Extremely reliable service.",
+      "service": "General Plumbing",
+      "date": "2 weeks ago",
+      "avatarColor": "#16a34a",
+      "verified": true
     },
     {
       "id": 4,
       "name": "Ayesha Siddiqui",
       "rating": 5,
-      "comment": "Amazing experience with their electrician. Fixed our wiring issues safely and efficiently. Great value for money.",
-      "service": "General Electric"
+      "comment": "Had our complete wiring checked and several outlets replaced. The electrician was professional, safe, and explained everything clearly. Great value and peace of mind.",
+      "service": "General Electric",
+      "date": "3 weeks ago",
+      "avatarColor": "#ea580c",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "Omer Farooq",
+      "rating": 5,
+      "comment": "Best AC service in Islamabad. They did a deep chemical wash and my unit is cooling better than when it was new. Very satisfied with the pricing too.",
+      "service": "AC Service",
+      "date": "1 month ago",
+      "avatarColor": "#2563eb",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "Mariam Khan",
+      "rating": 5,
+      "comment": "Professional furniture assembly. They put together my entire home office setup in just 2 hours. Saved me days of work and frustration!",
+      "service": "Handyman",
+      "date": "1 month ago",
+      "avatarColor": "#9333ea",
+      "verified": true
     }
   ]
 }
