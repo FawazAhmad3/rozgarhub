@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${scrolled || !isHomePage ? 'scrolled' : ''}`}>
       <div className="navbar-content">
         <Link to="/" className="logo-container">
-          <img src="/logos/logo.png" alt={data.brand} className="logo-img" />
+          <img src="/logos/city-sahulat-logo.png" alt={data.brand} className="logo-img" />
           <span className="brand-name">{data.brand}</span>
         </Link>
 
