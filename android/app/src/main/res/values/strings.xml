@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">City Sahulat</string>
+    <string name="title_activity_main">City Sahulat</string>
+    <string name="package_name">com.citysahulat.app</string>
+    <string name="custom_url_scheme">com.citysahulat.app</string>
+</resources>
