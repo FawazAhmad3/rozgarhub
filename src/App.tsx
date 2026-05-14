@@ -34,11 +34,19 @@ const AppContent: React.FC = () => {
   );
 };
 
+import WebSplashScreen from './components/WebSplashScreen';
+
 const App: React.FC = () => {
+  const [showSplash, setShowSplash] = React.useState(true);
+
   return (
     <Router>
       <ServiceProvider>
-        <AppContent />
+        {showSplash ? (
+          <WebSplashScreen onComplete={() => setShowSplash(false)} />
+        ) : (
+          <AppContent />
+        )}
       </ServiceProvider>
     </Router>
   );
