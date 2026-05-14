@@ -13,7 +13,7 @@ const WebSplashScreen: React.FC<WebSplashScreenProps> = ({ onComplete }) => {
     const timer = setTimeout(() => {
       setIsVisible(false);
       setTimeout(onComplete, 800); // Wait for exit animation
-    }, 3500);
+    }, 2200); // 2.2s + 0.8s exit = 3s total
 
     return () => clearTimeout(timer);
   }, [onComplete]);
@@ -29,7 +29,7 @@ const WebSplashScreen: React.FC<WebSplashScreenProps> = ({ onComplete }) => {
         >
           <div className="web-splash-content">
             <motion.img 
-              src="/logos/city-sahulat-logo.png" 
+              src="/logos/logo.png" 
               alt="Logo" 
               className="splash-logo"
               initial={{ scale: 0.8, opacity: 0 }}
@@ -43,7 +43,7 @@ const WebSplashScreen: React.FC<WebSplashScreenProps> = ({ onComplete }) => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6, ease: "backOut" }}
             >
-              Smart living Smart services
+              Reliable Services | Smart Solutions
             </motion.div>
           </div>
           
@@ -51,7 +51,7 @@ const WebSplashScreen: React.FC<WebSplashScreenProps> = ({ onComplete }) => {
             className="splash-loader"
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
-            transition={{ delay: 0.5, duration: 3, ease: "linear" }}
+            transition={{ delay: 0.5, duration: 2.2, ease: "linear" }}
           />
         </motion.div>
       )}
