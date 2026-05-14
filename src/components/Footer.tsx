@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className="container footer-grid">
         <div className="footer-brand">
           <Link to="/" className="logo-container">
-            <img src="/logos/Logo.png" alt={nav.brand} className="logo-img" />
+            <img src="/logos/city-sahulat-logo.png" alt={nav.brand} className="logo-img" />
             <span className="brand-name">{nav.brand}</span>
           </Link>
           <p className="footer-desc">
