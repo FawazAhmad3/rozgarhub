@@ -6,7 +6,7 @@
   position: relative;
   background: url('/images/tasker-header.jpg') center/cover no-repeat;
   color: white;
-  padding: 10rem 0;
+  padding: 6rem 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@
 
 /* Team Section */
 .team-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
   background: #ffffff;
 }
 
@@ -102,7 +102,7 @@
   font-size: 1.25rem;
   color: #64748b;
   max-width: 700px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.5rem;
   text-align: center;
 }
 
@@ -258,7 +258,7 @@
 
 /* Form Section */
 .join-form-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #f1f5f9;
 }
 
@@ -349,7 +349,7 @@
 
 /* Contact Section */
 .contact-cta {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .cta-box {
