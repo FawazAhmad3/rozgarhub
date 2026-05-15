@@ -37,10 +37,16 @@ const Home: React.FC = () => {
       <section className="affiliations">
         <div className="container">
           <h2 className="section-title">{data.affiliations.title}</h2>
-          <div className="logos-grid">
-            {data.affiliations.logos.map((logo, idx) => (
-              <img key={idx} src={logo} alt="Partner" className="partner-logo" />
-            ))}
+          <div className="logos-marquee">
+            <div className="logos-track">
+              {data.affiliations.logos.map((logo, idx) => (
+                <img key={`logo-1-${idx}`} src={logo} alt="Partner" className="partner-logo" />
+              ))}
+              {/* Duplicate for seamless loop */}
+              {data.affiliations.logos.map((logo, idx) => (
+                <img key={`logo-2-${idx}`} src={logo} alt="Partner" className="partner-logo" />
+              ))}
+            </div>
           </div>
         </div>
       </section>

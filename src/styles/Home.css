@@ -96,19 +96,38 @@
   100% { transform: scale(1); opacity: 1; }
 }
 
-.logos-grid {
+.logos-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.logos-track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  flex-wrap: wrap;
-  opacity: 0.5;
-  filter: grayscale(1);
+  gap: 6rem;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  opacity: 0.7;
+  filter: grayscale(0.5);
+  transition: all 0.5s ease;
+}
+
+.logos-track:hover {
+  animation-play-state: paused;
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .partner-logo {
-  height: 45px;
+  height: 60px;
   width: auto;
+  object-fit: contain;
 }
 
 .text-center {

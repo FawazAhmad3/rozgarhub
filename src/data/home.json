@@ -106,6 +106,13 @@
   },
   "affiliations": {
     "title": "Our Affiliation",
-    "logos": []
+    "logos": [
+      "/images/affiliations/frpd.png",
+      "/images/affiliations/bahria.png",
+      "/images/affiliations/qau.png",
+      "/images/affiliations/iiui.png",
+      "/images/affiliations/nkf.png",
+      "/images/affiliations/ubl.png"
+    ]
   }
 }
