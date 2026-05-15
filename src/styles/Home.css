@@ -6,6 +6,11 @@
 
 .top-services {
   padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.affiliations {
+  padding-top: 0 !important;
 }
 
 .service-card {
