@@ -29,12 +29,12 @@
     "taskers": [
       {
         "id": "t1",
-        "name": "Ahmed Khan",
-        "role": "Master Plumber",
+        "name": "Naseeb Gul",
+        "role": "Electrician",
         "type": "permanent",
         "experience": "8+ Years",
-        "specialty": "Pipe Fitting & Leak Repair",
-        "image": "/images/tasker1.jpg"
+        "specialty": "Electrical Installation & Repair",
+        "image": "/images/team/naseeb.jpeg"
       },
       {
         "id": "t2",
