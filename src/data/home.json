@@ -3,11 +3,6 @@
   "hero": {
     "slides": [
       {
-        "image": "/images/home/hero/slider1.jpg",
-        "title": "Professional Home Services at Your Doorstep",
-        "subtitle": "Trusted by thousands in Islamabad"
-      },
-      {
         "image": "/images/home/hero/slider2.jpg",
         "title": "Expert Repairs & Cleaning",
         "subtitle": "Quality service you can rely on"
