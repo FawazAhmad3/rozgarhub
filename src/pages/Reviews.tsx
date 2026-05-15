@@ -15,7 +15,7 @@ const Reviews: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappNumber = "92516045132";
+    const whatsappNumber = header.whatsappNumber;
     const message = `*New Customer Review Submission*%0A%0A` +
       `*Name:* ${formData.name}%0A` +
       `*Service:* ${formData.service}%0A` +
