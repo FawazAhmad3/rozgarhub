@@ -38,8 +38,8 @@ const BecomeTasker: React.FC = () => {
       `*Application Type:* ${formData.type.toUpperCase()}%0A` +
       `*Address:* ${formData.address}`;
     
-    const whatsappUrl = `whatsapp://send?phone=${joinForm.whatsappNumber}&text=${message}`;
-    window.location.assign(whatsappUrl);
+    const whatsappUrl = `https://wa.me/${joinForm.whatsappNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
