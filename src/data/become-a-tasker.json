@@ -80,6 +80,15 @@
         "experience": "12+ Years",
         "specialty": "Interior & Exterior Painting",
         "image": "/images/farooq_sheikh.png"
+      },
+      {
+        "id": "t7",
+        "name": "Naseeb Gul",
+        "role": "Electrician",
+        "type": "permanent",
+        "experience": "8+ Years",
+        "specialty": "Electrical Installation & Repair",
+        "image": "/images/team/naseeb.jpeg"
       }
     ]
   },
