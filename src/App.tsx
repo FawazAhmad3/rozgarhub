@@ -8,6 +8,7 @@ import Reviews from './pages/Reviews';
 import BecomeTasker from './pages/BecomeTasker';
 import ServiceModal from './components/ServiceModal';
 import SocialFloatingButtons from './components/SocialFloatingButtons';
+import WebSplashScreen from './components/WebSplashScreen';
 import { ServiceProvider, useService } from './context/ServiceContext';
 import './index.css';
 
@@ -35,8 +36,6 @@ const AppContent: React.FC = () => {
     </div>
   );
 };
-
-import WebSplashScreen from './components/WebSplashScreen';
 
 const App: React.FC = () => {
   const [showSplash, setShowSplash] = React.useState(true);
