@@ -78,11 +78,6 @@
     "title": "Our Premium Services",
     "items": [
       {
-        "id": "appliance-repair",
-        "name": "Home Appliance Repair",
-        "image": "/images/appliance.jpg"
-      },
-      {
         "id": "cleaning",
         "name": "Cleaning Services",
         "image": "/images/cleaning.jpg"
@@ -96,6 +91,11 @@
         "id": "plumbing",
         "name": "Plumbing Services",
         "image": "/images/plumbing.jpg"
+      },
+      {
+        "id": "appliance-repair",
+        "name": "Home Appliance Repair",
+        "image": "/images/appliance.jpg"
       }
     ]
   },
