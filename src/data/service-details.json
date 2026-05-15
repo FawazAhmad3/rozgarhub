@@ -2,85 +2,85 @@
   "home-cleaning": {
     "name": "Home Cleaning",
     "description": "Professional residential cleaning service that covers dusting, vacuuming, mopping, and sanitizing all living spaces to maintain a pristine home environment.",
-    "images": ["/images/cleaning.jpg", "/images/slider1.jpg"],
+    "images": ["/images/home/services/cleaning.jpg", "/images/home/hero/slider1.jpg"],
     "videos": []
   },
   "move-out-cleaning": {
     "name": "Move Out Cleaning",
     "description": "Deep cleaning service specifically designed for those moving in or out of a property, ensuring the space is spotless for the next occupants.",
-    "images": ["/images/cleaning.jpg", "/images/slider2.jpg"],
+    "images": ["/images/home/services/cleaning.jpg", "/images/home/hero/slider2.jpg"],
     "videos": []
   },
   "office-cleaning": {
     "name": "Office Cleaning",
     "description": "Commercial cleaning solutions for offices and workplaces to create a healthy, productive environment for employees and clients alike.",
-    "images": ["/images/cleaning.jpg", "/images/booking-side.jpg"],
+    "images": ["/images/home/services/cleaning.jpg", "/images/home/booking/booking-side.jpg"],
     "videos": []
   },
   "deep-cleaning": {
     "name": "Deep Cleaning",
     "description": "An intensive cleaning process that reaches hidden dirt and grime in hard-to-reach areas, including kitchens, bathrooms, and detailed surfaces.",
-    "images": ["/images/cleaning.jpg", "/images/slider1.jpg"],
+    "images": ["/images/home/services/cleaning.jpg", "/images/home/hero/slider1.jpg"],
     "videos": []
   },
   "general-plumbing": {
     "name": "General Plumbing",
     "description": "Expert plumbing repairs and maintenance for pipes, leaks, and drainage systems to ensure your home's water system runs smoothly.",
-    "images": ["/images/plumbing.jpg", "/images/slider2.jpg"],
+    "images": ["/images/home/services/plumbing.jpg", "/images/home/hero/slider2.jpg"],
     "videos": []
   },
   "faucets": {
     "name": "Faucets",
     "description": "Installation and repair of kitchen and bathroom faucets, including leak fixes and modern fixture upgrades.",
-    "images": ["/images/plumbing.jpg", "/images/slider1.jpg"],
+    "images": ["/images/home/services/plumbing.jpg", "/images/home/hero/slider1.jpg"],
     "videos": []
   },
   "toilets": {
     "name": "Toilets",
     "description": "Comprehensive toilet repair and installation services, addressing clogs, leaks, and flushing mechanism issues.",
-    "images": ["/images/plumbing.jpg", "/images/slider2.jpg"],
+    "images": ["/images/home/services/plumbing.jpg", "/images/home/hero/slider2.jpg"],
     "videos": []
   },
   "tv-mounting": {
     "name": "TV Mounting",
     "description": "Secure wall mounting for TVs of all sizes, including wire concealment and bracket installation for the perfect viewing angle.",
-    "images": ["/images/electrical.jpg", "/images/slider1.jpg"],
+    "images": ["/images/home/services/electrical.jpg", "/images/home/hero/slider1.jpg"],
     "videos": []
   },
   "light-fixtures": {
     "name": "Light Fixtures",
     "description": "Professional installation of chandeliers, pendant lights, and wall sconces to brighten and enhance your home's interior.",
-    "images": ["/images/electrical.jpg", "/images/slider2.jpg"],
+    "images": ["/images/home/services/electrical.jpg", "/images/home/hero/slider2.jpg"],
     "videos": []
   },
   "ceiling-fans": {
     "name": "Ceiling Fans",
     "description": "Safe installation and wiring of ceiling fans to improve air circulation and comfort in any room.",
-    "images": ["/images/electrical.jpg", "/images/appliance.jpg"],
+    "images": ["/images/home/services/electrical.jpg", "/images/home/services/appliance.jpg"],
     "videos": []
   },
   "general-electric": {
     "name": "General Electric",
     "description": "Standard electrical repairs, troubleshooting, and circuit maintenance performed by certified professionals.",
-    "images": ["/images/electrical.jpg", "/images/slider1.jpg"],
+    "images": ["/images/home/services/electrical.jpg", "/images/home/hero/slider1.jpg"],
     "videos": []
   },
   "packing": {
     "name": "Packing and Unpacking",
     "description": "Stress-free moving assistance including careful packing of items and organized unpacking at your new destination.",
-    "images": ["/images/slider1.jpg", "/images/slider2.jpg"],
+    "images": ["/images/home/hero/slider1.jpg", "/images/home/hero/slider2.jpg"],
     "videos": []
   },
   "lawn-care": {
     "name": "Lawn Care",
     "description": "Outdoor maintenance including grass cutting, edging, and debris removal to keep your yard looking its best.",
-    "images": ["/images/slider2.jpg", "/images/cleaning.jpg"],
+    "images": ["/images/home/hero/slider2.jpg", "/images/home/services/cleaning.jpg"],
     "videos": []
   },
   "gutters": {
     "name": "Gutters and Downspouts",
     "description": "Cleaning and minor repairs for gutters and downspouts to ensure proper water drainage and prevent home damage.",
-    "images": ["/images/plumbing.jpg", "/images/slider1.jpg"],
+    "images": ["/images/home/services/plumbing.jpg", "/images/home/hero/slider1.jpg"],
     "videos": []
   }
 }

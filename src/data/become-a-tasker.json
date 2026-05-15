@@ -34,7 +34,7 @@
         "type": "permanent",
         "experience": "8+ Years",
         "specialty": "Electrical Installation & Repair",
-        "image": "/images/team/naseeb.jpeg"
+        "image": "/images/become-a-tasker/team/naseeb.jpeg"
       },
       {
         "id": "t2",
@@ -43,7 +43,7 @@
         "type": "permanent",
         "experience": "10+ Years",
         "specialty": "Wiring & Fixtures",
-        "image": "/images/tasker2.jpg"
+        "image": "/images/become-a-tasker/team/tasker2.jpg"
       },
       {
         "id": "t3",
@@ -52,7 +52,7 @@
         "type": "task-based",
         "experience": "5+ Years",
         "specialty": "Deep Cleaning",
-        "image": "/images/tasker3.jpg"
+        "image": "/images/become-a-tasker/team/tasker3.jpg"
       },
       {
         "id": "t4",
@@ -61,7 +61,7 @@
         "type": "task-based",
         "experience": "6+ Years",
         "specialty": "TV Mounting & Carpentry",
-        "image": "/images/tasker4.jpg"
+        "image": "/images/become-a-tasker/team/tasker4.jpg"
       },
       {
         "id": "t5",
@@ -70,7 +70,7 @@
         "type": "task-based",
         "experience": "7+ Years",
         "specialty": "AC Repair & Servicing",
-        "image": "/images/hamza_yusuf.png"
+        "image": "/images/become-a-tasker/team/hamza_yusuf.png"
       },
       {
         "id": "t6",
@@ -79,7 +79,7 @@
         "type": "permanent",
         "experience": "12+ Years",
         "specialty": "Interior & Exterior Painting",
-        "image": "/images/farooq_sheikh.png"
+        "image": "/images/become-a-tasker/team/farooq_sheikh.png"
       }
     ]
   },

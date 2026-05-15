@@ -3,32 +3,32 @@
   "hero": {
     "slides": [
       {
-        "image": "/images/slider1.jpg",
+        "image": "/images/home/hero/slider1.jpg",
         "title": "Professional Home Services at Your Doorstep",
         "subtitle": "Trusted by thousands in Islamabad"
       },
       {
-        "image": "/images/slider2.jpg",
+        "image": "/images/home/hero/slider2.jpg",
         "title": "Expert Repairs & Cleaning",
         "subtitle": "Quality service you can rely on"
       },
       {
-        "image": "/images/cleaning.jpg",
+        "image": "/images/home/services/cleaning.jpg",
         "title": "Deep Cleaning for Your Home",
         "subtitle": "Safe and hygienic cleaning solutions"
       },
       {
-        "image": "/images/electrical.jpg",
+        "image": "/images/home/services/electrical.jpg",
         "title": "Certified Electrical Services",
         "subtitle": "Safe repairs for your peace of mind"
       },
       {
-        "image": "/images/plumbing.jpg",
+        "image": "/images/home/services/plumbing.jpg",
         "title": "Reliable Plumbing Experts",
         "subtitle": "Quick fixes for all your plumbing needs"
       },
       {
-        "image": "/images/appliance.jpg",
+        "image": "/images/home/services/appliance.jpg",
         "title": "Appliance Repair & Service",
         "subtitle": "Expert care for your home appliances"
       }
@@ -80,22 +80,22 @@
       {
         "id": "cleaning",
         "name": "Cleaning Services",
-        "image": "/images/cleaning.jpg"
+        "image": "/images/home/services/cleaning.jpg"
       },
       {
         "id": "electrical",
         "name": "Electrical Services",
-        "image": "/images/electrical.jpg"
+        "image": "/images/home/services/electrical.jpg"
       },
       {
         "id": "plumbing",
         "name": "Plumbing Services",
-        "image": "/images/plumbing.jpg"
+        "image": "/images/home/services/plumbing.jpg"
       },
       {
         "id": "appliance-repair",
         "name": "Home Appliance Repair",
-        "image": "/images/appliance.jpg"
+        "image": "/images/home/services/appliance.jpg"
       }
     ]
   },
