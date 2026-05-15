@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Reviews from './pages/Reviews';
 import BecomeTasker from './pages/BecomeTasker';
 import ServiceModal from './components/ServiceModal';
+import SocialFloatingButtons from './components/SocialFloatingButtons';
 import { ServiceProvider, useService } from './context/ServiceContext';
 import './index.css';
 
@@ -30,6 +31,7 @@ const AppContent: React.FC = () => {
         isOpen={isModalOpen} 
         onClose={closeService} 
       />
+      <SocialFloatingButtons />
     </div>
   );
 };
