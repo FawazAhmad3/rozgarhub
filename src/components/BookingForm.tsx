@@ -26,8 +26,8 @@ const BookingForm: React.FC<BookingFormProps> = ({ data }) => {
       `*Location:* Islamabad, ${formData.area}%0A` +
       `*Address:* ${formData.address}`;
     
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `whatsapp://send?phone=${whatsappNumber}&text=${message}`;
+    window.location.assign(whatsappUrl);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
