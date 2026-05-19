@@ -5,27 +5,32 @@
       {
         "image": "/images/home/hero/slider2.jpg",
         "title": "Expert Repairs & Cleaning",
-        "subtitle": "Quality service you can rely on"
+        "subtitle": "Quality service you can rely on",
+        "backgroundPosition": "center 15%"
       },
       {
         "image": "/images/home/services/cleaning.jpg",
         "title": "Deep Cleaning for Your Home",
-        "subtitle": "Safe and hygienic cleaning solutions"
+        "subtitle": "Safe and hygienic cleaning solutions",
+        "backgroundPosition": "center 15%"
       },
       {
         "image": "/images/home/services/electrical.jpg",
         "title": "Certified Electrical Services",
-        "subtitle": "Safe repairs for your peace of mind"
+        "subtitle": "Safe repairs for your peace of mind",
+        "backgroundPosition": "center 15%"
       },
       {
         "image": "/images/home/services/plumbing.jpg",
         "title": "Reliable Plumbing Experts",
-        "subtitle": "Quick fixes for all your plumbing needs"
+        "subtitle": "Quick fixes for all your plumbing needs",
+        "backgroundPosition": "center 15%"
       },
       {
         "image": "/images/home/services/appliance.jpg",
         "title": "Appliance Repair & Service",
-        "subtitle": "Expert care for your home appliances"
+        "subtitle": "Expert care for your home appliances",
+        "backgroundPosition": "center 15%"
       }
     ],
     "cta": "Explore Services"

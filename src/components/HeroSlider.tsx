@@ -7,6 +7,7 @@ interface Slide {
   image: string;
   title: string;
   subtitle: string;
+  backgroundPosition?: string;
 }
 
 interface HeroSliderProps {
@@ -30,7 +31,8 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
           key={index}
           className={`slide ${index === current ? 'active' : ''}`}
           style={{ 
-            backgroundImage: `linear-gradient(rgba(0, 35, 71, 0.7), rgba(0, 35, 71, 0.4)), url(${slide.image})` 
+            backgroundImage: `linear-gradient(rgba(0, 35, 71, 0.7), rgba(0, 35, 71, 0.4)), url(${slide.image})`,
+            backgroundPosition: slide.backgroundPosition || 'center'
           }}
         >
           <div className="container slide-content">
