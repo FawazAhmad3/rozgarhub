@@ -127,22 +127,26 @@
 .mega-menu {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  width: 1000px;
-  background: var(--white);
-  border-radius: 1.5rem;
-  padding: 3rem;
+  right: -150px;
+  left: auto;
+  transform: translateY(15px);
+  width: 660px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  padding: 2.2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2rem;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 25px 50px -12px rgba(0, 35, 71, 0.25);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 20px 45px rgba(0, 35, 71, 0.12), 0 4px 12px rgba(0, 0, 0, 0.03);
   margin-top: 0;
-  border: 1px solid rgba(0, 35, 71, 0.05);
+  border: 1px solid rgba(0, 35, 71, 0.08);
   z-index: 1100;
+  transform-origin: top right;
 }
 
 .mega-menu::before {
@@ -158,14 +162,16 @@
 .dropdown:hover .mega-menu {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 
 .category-header-small {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 1.5px solid rgba(0, 35, 71, 0.06);
+  padding-bottom: 0.5rem;
 }
 
 .cat-icon {
@@ -173,36 +179,39 @@
 }
 
 .menu-category h3 {
-  font-size: 0.75rem;
-  font-weight: 900;
-  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 1.25rem;
+  letter-spacing: 1.2px;
+  margin: 0;
 }
 
 .category-links {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.6rem;
 }
 
 .category-link, .category-link-btn {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-light);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background: none;
   border: none;
-  padding: 0;
+  padding: 0.2rem 0;
   text-align: left;
   font-family: inherit;
   cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
 }
 
 .category-link:hover, .category-link-btn:hover {
-  color: var(--primary);
-  padding-left: 0.5rem;
+  color: var(--accent);
+  transform: translateX(6px);
+  font-weight: 600;
 }
 
 /* Mobile Menu - CRITICAL FIX */
